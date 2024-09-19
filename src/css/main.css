@@ -61,7 +61,9 @@ header {
     z-index: 9999;
     margin-bottom: 550vh;
     z-index: 999999999999999;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .container {
