@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow: hidden auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+
+header {
+    background: rgb(12, 85, 42);
+    background: linear-gradient(90deg, rgba(12, 85, 42, 1) 15%, rgba(245, 126, 48, 1) 100%);
+    padding: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    margin-bottom: 550vh;
+    z-index: 999999999999999;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container>div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .container img {
+    width: 160px;
+    margin-right: 32px
+}
+
+header .container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+header .container nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header .container .info,
+header .container .social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .container .social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    letter-spacing: 1px;
+}
+
+header .container .other>a {
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.hero {
+    min-height: 100vh;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 52px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 60%;
+    background: rgb(236, 236, 236);
+    background: linear-gradient(90deg, rgba(236, 236, 236, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(249, 249, 249, 1) 85%, rgba(236, 236, 236, 1) 100%);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.hero .container {
+    position: relative;
+    height: calc(100vh - 68px);
+}
+
+.hero .container>img {
+    width: 650px;
+    margin: auto;
+    display: block;
+    padding-bottom: 24px;
+}
+
+.hero .ingreadiants {
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .ingreadiants .rice {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero .ingreadiants .pasta {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.hero .ingreadiants .chickpeas {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+
+.hero .ingreadiants .lentils {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero .ingreadiants .onion {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero .ingreadiants .salsa {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero .ingreadiants .shata {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero .ingreadiants .garlic {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* -------------------------------------------------------- */
+
+.rice-1-initial {
+    position: absolute;
+    width: 54px;
+    bottom: 0;
+    left: 290px;
+}
+
+.rice-2-initial {
+    position: absolute;
+    width: 56px;
+    bottom: 50px;
+    left: 350px;
+}
+
+.rice-3-initial {
+    position: absolute;
+    width: 85px;
+    bottom: -70px;
+    left: 310px;
+}
+
+.rice-4-initial {
+    position: absolute;
+    width: 280px;
+    bottom: -110px;
+    left: 360px;
+}
+
+.rice-5-initial {
+    position: absolute;
+    width: 54px;
+    bottom: 0;
+    right: 250px;
+}
+
+.rice-6-initial {
+    position: absolute;
+    width: 56px;
+    bottom: 60px;
+    right: 300px;
+}
+
+.rice-7-initial {
+    position: absolute;
+    width: 85px;
+    bottom: 0px;
+    right: 320px;
+}
+
+.rice-8-initial {
+    position: absolute;
+    width: 120px;
+    bottom: -50px;
+    left: 250px;
+}
+
+.rice-1-final {
+    position: absolute;
+    width: 54px;
+    bottom: -180px;
+    left: 290px;
+}
+
+.rice-2-final {
+    position: absolute;
+    width: 56px;
+    bottom: -160px;
+    left: 330px;
+    top: auto;
+}
+
+.rice-3-final {
+    position: absolute;
+    width: 85px;
+    top: auto;
+    left: 300px;
+    bottom: -190px;
+}
+
+.rice-4-final {
+    position: absolute;
+    width: 350px;
+    bottom: -280px;
+    left: 320px;
+}
+
+.rice-5-final {
+    position: absolute;
+    width: 54px;
+    bottom: -220px;
+    right: 350px;
+}
+
+.rice-6-final {
+    position: absolute;
+    width: 56px;
+    top: auto;
+    right: 320px;
+    bottom: -150px;
+}
+
+.rice-7-final {
+    position: absolute;
+    width: 85px;
+    top: auto;
+    right: 290px;
+    bottom: -160px;
+}
+
+.rice-8-final {
+    position: absolute;
+    width: 130px;
+    bottom: -200px;
+    right: 350px;
+}
+
+.rice {
+    transition: all 1.5s ease-in-out;
+    /* Adjust duration and timing function as needed */
+}
+
+.ingreadiants img{    transition: all .5s ease-in-out;
+}
+
+.rice-1-final,
+.rice-2-final,
+.rice-3-final,
+.rice-4-final,
+.rice-5-final,
+.rice-6-final,
+.rice-7-final,
+.rice-8-final {
+    transition: all .5s ease-in-out;
+    animation: none !important;
+}
+
+.rice img {
+    position: absolute;
+    animation-duration: 5s;
+    /* Base duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* Infinite loop */
+}
+
+/* Random Fly Animation for Each Element */
+@keyframes fly {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Assign unique delays to stagger animations */
+.rice-1 {
+    animation-name: fly;
+    animation-delay: 0s;
+}
+
+.rice-2 {
+    animation-name: fly;
+    animation-delay: 0.5s;
+}
+
+.rice-3 {
+    animation-name: fly;
+    animation-delay: 1s;
+}
+
+.rice-4 {
+    animation-name: fly;
+    animation-delay: 1.5s;
+}
+
+.rice-5 {
+    animation-name: fly;
+    animation-delay: 2s;
+}
+
+.rice-6 {
+    animation-name: fly;
+    animation-delay: 2.5s;
+}
+
+.rice-7 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.rice-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+
+/* -------------------------------------------------------*/
+
+.pasta-1-initial {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    width: 200px;
+}
+
+.pasta-2-initial {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 220px;
+}
+
+.pasta-3-initial {
+    position: absolute;
+    bottom: 5px;
+    left: 320px;
+    width: 220px;
+}
+.pasta-4-initial {
+    position: absolute;
+    bottom: -90px;
+    left: 280px;
+    width: 200px;
+}
+.pasta-5-initial {
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+    width: 220px;
+}
+
+.pasta-6-initial {
+    position: absolute;
+    bottom: -50px;
+    left: 150px;
+    width: 220px;
+}
+
+
+.pasta-7-initial {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    width: 220px;
+}
+
+
+.pasta-8-initial {
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    width: 320px;
+}
+
+.pasta-1-final {
+    position: absolute;
+    bottom: -200px;
+    right: 290px;
+    width: 180px;
+}
+
+.pasta-2-final {
+    position: absolute;
+    bottom: -220px;
+    left: 310px;
+    width: 200px;
+}
+
+.pasta-3-final {
+    position: absolute;
+    bottom: -235px;
+    left: 360px;
+    width: 210px;
+}
+.pasta-4-final {
+    position: absolute;
+    bottom: -210px;
+    left: 430px;
+    width: 200px;
+}
+.pasta-5-final {
+    position: absolute;
+    bottom: -200px;
+    left: 430px;
+    width: 220px;
+}
+
+.pasta-6-final {
+    position: absolute;
+    bottom: -190px;
+    left: 300px;
+    width: 220px;
+}
+
+
+.pasta-7-final {
+    position: absolute;
+    bottom: -160px;
+    left: 450px;
+    width: 220px;
+}
+
+
+.pasta-8-final {
+    position: absolute;
+    bottom: -230px;
+    right: 260px;
+    width: 280px;
+}
+
+.pasta-1-final,
+.pasta-2-final,
+.pasta-3-final,
+.pasta-4-final,
+.pasta-5-final,
+.pasta-6-final,
+.pasta-7-final,
+.pasta-8-final {
+    transition: all .5s ease-in-out;
+    animation: none !important;
+}
+
+.pasta img {
+    position: absolute;
+    animation-duration: 5s;
+    /* Base duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* Infinite loop */
+}
+
+
+
+.pasta-1 {
+    animation-name: fly;
+    animation-delay: 0s;
+}
+
+.pasta-2 {
+    animation-name: fly;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.pasta-3 {
+    animation-name: fly;
+    animation-delay: 1s;
+}
+
+.pasta-4 {
+    animation-name: fly;
+    animation-delay: 1.5s;
+}
+
+.pasta-5 {
+    animation-name: fly;
+    animation-delay: 2s;
+}
+
+.pasta-6 {
+    animation-name: fly;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.pasta-7 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.pasta-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+
+/* -----------------------------------------*/
+.lentils-1-initial {
+    position: absolute;
+    bottom: 120px;
+    right: 150px;
+    width: 65px;
+}
+.lentils-2-initial {
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    width: 65px;
+}
+
+.lentils-3-initial {
+    position: absolute;
+    bottom: 120px;
+    left: 150px;
+    width: 65px;
+    z-index: 5;
+}
+
+.lentils-4-initial {
+    position: absolute;
+    bottom: 110px;
+    right: 250px;
+    width: 65px;
+}
+
+.lentils-5-initial {
+    position: absolute;
+    bottom: 100px;
+    left: 400px;
+    width: 100px;
+    z-index: 5;
+}
+
+.lentils-6-initial {
+    position: absolute;
+    bottom: -50px;
+    left: 350px;
+    width: 280px;
+    z-index: 5;
+}
+
+.lentils-1-final {
+    position: absolute;
+    bottom: -120px;
+    right: 350px;
+    width: 55px;
+}
+.lentils-2-final {
+    position: absolute;
+    bottom: -160px;
+    left: 350px;
+    width: 65px;
+}
+
+.lentils-3-final {
+    position: absolute;
+    bottom: -171px;
+    left: 470px;
+    width: 65px;
+    z-index: 5;
+}
+
+.lentils-4-final {
+    position: absolute;
+    bottom: -210px;
+    right: 370px;
+    width: 65px;
+}
+
+.lentils-5-final {
+    position: absolute;
+    bottom: -230px;
+    left: 400px;
+    width: 100px;
+    z-index: 5;
+}
+
+.lentils-6-final {
+    position: absolute;
+    bottom: -230px;
+    left: 370px;
+    width: 280px;
+    z-index: 5;
+}
+
+
+.lentils-1-final,
+.lentils-2-final,
+.lentils-3-final,
+.lentils-4-final,
+.lentils-5-final,
+.lentils-6-final,
+.lentils-7-final,
+.lentils-8-final {
+    transition: all .5s ease-in-out;
+    animation: none !important;
+}
+
+.lentils img {
+    position: absolute;
+    animation-duration: 5s;
+    /* Base duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* Infinite loop */
+}
+
+
+
+.lentils-1 {
+    animation-name: fly;
+    animation-delay: 0s;
+}
+
+.lentils-2 {
+    animation-name: fly;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.lentils-3 {
+    animation-name: fly;
+    animation-delay: 1s;
+}
+
+.lentils-4 {
+    animation-name: fly;
+    animation-delay: 1.5s;
+}
+
+.lentils-5 {
+    animation-name: fly;
+    animation-delay: 2s;
+}
+
+.lentils-6 {
+    animation-name: fly;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.lentils-7 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.lentils-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+/* ------------------------------------------------------------------*/
+
+.chickpeas-1-initial {
+    position: absolute;
+    bottom: -60px;
+    right: 180px;
+    width: 200px;
+}
+.chickpeas-2-initial {
+    position: absolute;
+    bottom: -60px;
+    left: 180px;
+    width: 200px;
+}
+.chickpeas-3-initial {
+    position: absolute;
+    bottom: -60px;
+    left: 380px;
+    width: 100px;
+}
+.chickpeas-4-initial {
+    position: absolute;
+    bottom: -30px;
+    right: 440px;
+    width: 160px;
+    transform: rotate(40deg);
+}
+.chickpeas-1-final {
+    position: absolute;
+    bottom: -240px;
+    right: 340px;
+    width: 150px;
+}
+.chickpeas-2-final {
+    position: absolute;
+    bottom: -200px;
+    left: 300px;
+    width: 200px;
+}
+.chickpeas-3-final {
+    position: absolute;
+    bottom: -190px;
+    left: 500px;
+    width: 100px;
+}
+.chickpeas-4-final {
+    position: absolute;
+    bottom: -240px;
+    right: 440px;
+    width: 160px;
+    transform: rotate(40deg);
+}
+
+.chickpeas-1-final,
+.chickpeas-2-final,
+.chickpeas-3-final,
+.chickpeas-4-final,
+.chickpeas-5-final,
+.chickpeas-6-final,
+.chickpeas-7-final,
+.chickpeas-8-final {
+    transition: all .5s ease-in-out;
+    animation: none !important;
+}
+
+.chickpeas img {
+    position: absolute;
+    animation-duration: 5s;
+    /* Base duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* Infinite loop */
+}
+
+
+
+.chickpeas-1 {
+    animation-name: fly;
+    animation-delay: 0s;
+}
+
+.chickpeas-2 {
+    animation-name: fly;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.chickpeas-3 {
+    animation-name: fly;
+    animation-delay: 1s;
+}
+
+.chickpeas-4 {
+    animation-name: fly;
+    animation-delay: 1.5s;
+}
+
+.chickpeas-5 {
+    animation-name: fly;
+    animation-delay: 2s;
+}
+
+.chickpeas-6 {
+    animation-name: fly;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.chickpeas-7 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.chickpeas-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+/* ---------------------------------------------------------------*/
+
+.onion-1-initial {
+    position: absolute;
+    left: 120px;
+    width: 240px;
+    bottom: 0;
+}
+
+.onion-2-initial {
+    position: absolute;
+    right: 320px;
+    width: 240px;
+    bottom: -40px;
+}
+
+
+.onion-3-initial {
+    position: absolute;
+    right: 120px;
+    width: 240px;
+    bottom: 0;
+}
+
+
+.onion-1-final {
+    position: absolute;
+    left: 320px;
+    width: 220px;
+    bottom: -210px;
+}
+
+.onion-2-final {
+    position: absolute;
+    right: 370px;
+    width: 240px;
+    bottom: -200px;
+}
+
+
+.onion-3-final {
+    position: absolute;
+    right: 300px;
+    width: 240px;
+    bottom: -230px;
+}
+
+
+
+.onion-1-final,
+.onion-2-final,
+.onion-3-final,
+.onion-4-final,
+.onion-5-final,
+.onion-6-final,
+.onion-7-final,
+.onion-8-final {
+    transition: all .5s ease-in-out;
+    animation: none !important;
+}
+
+.onion img {
+    position: absolute;
+    animation-duration: 5s;
+    /* Base duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* Infinite loop */
+}
+
+
+
+.onion-1 {
+    animation-name: fly;
+    animation-delay: 0s;
+}
+
+.onion-2 {
+    animation-name: fly;
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+
+.onion-3 {
+    animation-name: fly;
+    animation-delay: 1s;
+}
+
+.onion-4 {
+    animation-name: fly;
+    animation-delay: 1.5s;
+}
+
+.onion-5 {
+    animation-name: fly;
+    animation-delay: 2s;
+}
+
+.onion-6 {
+ 
+    animation-name: fly;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.onion-7 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.onion-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+
+.salsa img {
+    width: 530px;
+    position: absolute;
+    left: 300px;
+    bottom: -80px;
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+.shata img {
+    width: 450px;
+    position: absolute;
+    right: 150px;
+    bottom: -170px;
+    animation-duration: 1s;
+}
+
+.garlic img {
+    width: 480px;
+    position: absolute;
+    left: 100px;
+    bottom: -90px;
+    animation-duration: 1s;
+}
