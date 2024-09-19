@@ -113,6 +113,9 @@ const Home = () => {
   
   return (
     <DefaultLayout>
+      <div style={{
+            marginBottom: '550vh'
+      }}></div>
       <section className="hero">
         <div className="container">
           <div className="ingreadiants">
