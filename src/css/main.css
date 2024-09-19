@@ -1023,8 +1023,8 @@ header .container .other>a {
 .salsa img {
     width: 530px;
     position: absolute;
-    left: 300px;
-    bottom: -80px;
+    bottom: -110px;
+    left: 240px;
     animation-duration: 1s; /* don't forget to set a duration! */
 }
 .shata img {
