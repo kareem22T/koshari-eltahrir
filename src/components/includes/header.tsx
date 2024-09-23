@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from './../../images/logo@1.25x.png'
+import logo from './../../images/logo.png'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)

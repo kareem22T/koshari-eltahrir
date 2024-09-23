@@ -58,44 +58,44 @@ const Home = () => {
         setScrolledRice(false);
       }
 
-      if (scrollPosition > 500) {
+      if (scrollPosition > 300) {
         setScrolledPasta(true);
       } else {
         setScrolledPasta(false);
       }
 
-      if (scrollPosition > 800) {
+      if (scrollPosition > 300) {
         setScrolledLentils(true);
       } else {
         setScrolledLentils(false);
       }
 
-      if (scrollPosition > 1100) {
+      if (scrollPosition > 500) {
         setScrolledChickpeas(true);
       } else {
         setScrolledChickpeas(false);
       }
-      if (scrollPosition > 1400) {
+      if (scrollPosition > 500) {
         setScrolledOnions(true);
       } else {
         setScrolledOnions(false);
       }
-      if (scrollPosition > 1700) {
+      if (scrollPosition > 800) {
         setscrolledSalsa(true);
       } else {
         setscrolledSalsa(false);
       }
-      if (scrollPosition > 2000) {
+      if (scrollPosition > 800) {
         setscrolledshata(true);
       } else {
         setscrolledshata(false);
       }
-      if (scrollPosition > 2300) {
+      if (scrollPosition > 800) {
         setsetscrolledGarlic(true);
       } else {
         setsetscrolledGarlic(false);
       }
-      if (scrollPosition > 2700) {
+      if (scrollPosition > 1300) {
         setIsShowCompleteDish(true);
       } else {
         setIsShowCompleteDish(false);
@@ -114,7 +114,7 @@ const Home = () => {
   return (
     <DefaultLayout>
       <div style={{
-            marginBottom: '550vh'
+            marginBottom: '300vh'
       }}></div>
       <section className="hero">
         <div className="container">
