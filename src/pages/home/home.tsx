@@ -52,7 +52,7 @@ const Home = () => {
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
   
-        const handleScrollState = (scrollValue, setScrollValue, start, mid, end) => {
+        const handleScrollState = (scrollValue:any, setScrollValue:any, start:any, mid:any, end:any) => {
           if (scrollPosition > end) {
             setScrollValue(2); // fully scrolled
           } else if (scrollPosition > mid) {
