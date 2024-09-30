@@ -129,6 +129,8 @@ header .container .other>a {
     top: 0;
     left: 0;
     padding-top: 52px;
+    background: rgb(12,85,42);
+    background: linear-gradient(90deg, rgba(12,85,42,1) 0%, rgba(245,126,48,1) 100%);
 }
 
 .hero .container {
@@ -350,7 +352,7 @@ header .container .other>a {
 }
 
 .rice {
-    transition: all 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out, top 1.5s ease-in-out, left 1.5s ease-in-out;
     /* Adjust duration and timing function as needed */
 }
 
@@ -1090,6 +1092,7 @@ header .container .other>a {
 .pasta-7-final,
 .pasta-8-final {
     transition: all .5s ease-in-out;
+    /* transition-delay: .; */
     animation: none !important;
 }
 
@@ -2901,11 +2904,13 @@ header .container .other>a {
       }
 
 }
-
+.hero .ingreadiants .salsa img, .hero .ingreadiants .shata img, .hero .ingreadiants .garlic img {
+    opacity: 1;
+}
 
 
 .hidden {
-    opacity: 0;
+    opacity: 0 !important;
     position: absolute;
   }
   
@@ -2913,6 +2918,22 @@ header .container .other>a {
     opacity: 0 ;
   }
   .ingreadiants .rice img {
+    opacity: 1;
+  }
+
+  .ingreadiants .pasta img {
+    opacity: 1;
+  }
+
+  .ingreadiants .lentils img {
+    opacity: 1;
+  }
+
+  .ingreadiants .chickpeas img {
+    opacity: 1;
+  }
+
+  .ingreadiants .onion img {
     opacity: 1;
   }
 
@@ -2959,3 +2980,30 @@ header .container .other>a {
     opacity: 1 !important;
 }
 
+.rice.initial {
+    transform: scale(1.3);
+    transform-origin: center 100%;
+}
+
+.pasta.initial {
+    transform: scale(1.3);
+    transform-origin: center 100%;
+    opacity: 0;
+}
+
+.lentils.initial {
+    transform: scale(1.3);
+    transform-origin: center 100%;
+    opacity: 0;
+}
+
+.chickpeas.initial {
+    transform: scale(1.3);
+    transform-origin: center 100%;
+    opacity: 0;
+}
+.onion.initial {
+    transform: scale(1.3);
+    transform-origin: center 100%;
+    opacity: 0;
+}

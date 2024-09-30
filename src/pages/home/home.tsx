@@ -37,84 +37,59 @@ import shata from "./../../images/shata.png";
 import garlic from "./../../images/garlic sauce .png";
 
 const Home = () => {
-  const [scrolledRice, setScrolledRice] = useState(false);
-  const [scrolledPasta, setScrolledPasta] = useState(false);
-  const [scrolledLentils, setScrolledLentils] = useState(false);
-  const [scrolledChickpeas, setScrolledChickpeas] = useState(false);
-  const [scrolledOnions, setScrolledOnions] = useState(false);
-  const [scrolledSalsa, setscrolledSalsa] = useState(false);
-  const [scrolledshata, setscrolledshata] = useState(false);
-  const [scrolledgarlic, setsetscrolledGarlic] = useState(false);
-  const [isShowCompleteDish, setIsShowCompleteDish] = useState(false);
+    const [scrolledRice, setScrolledRice] = useState(0);
+    const [scrolledPasta, setScrolledPasta] = useState(0);
+    const [scrolledLentils, setScrolledLentils] = useState(0);
+    const [scrolledChickpeas, setScrolledChickpeas] = useState(0);
+    const [scrolledOnions, setScrolledOnions] = useState(0);
+    const [scrolledSalsa, setScrolledSalsa] = useState(0);
+    const [scrolledShata, setScrolledShata] = useState(0);
+    const [scrolledGarlic, setScrolledGarlic] = useState(0);
+    const [isShowCompleteDish, setIsShowCompleteDish] = useState(false);
+  
+    // Handle the scroll event
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+  
+        const handleScrollState = (scrollValue, setScrollValue, start, mid, end) => {
+          if (scrollPosition > end) {
+            setScrollValue(2); // fully scrolled
+          } else if (scrollPosition > mid) {
+            setScrollValue(1); // partially scrolled
+          } else if (scrollPosition < start) {
+            setScrollValue(0); // not scrolled into view
+          }
+        };
+        handleScrollState(scrolledRice, setScrolledRice, 300, 600, 900);
+        handleScrollState(scrolledPasta, setScrolledPasta, 900, 1200, 1500);
+        handleScrollState(scrolledLentils, setScrolledLentils, 1500, 1800, 2100);
+        handleScrollState(scrolledChickpeas, setScrolledChickpeas, 2100, 2400, 2700);
+        handleScrollState(scrolledOnions, setScrolledOnions, 2700, 3000, 3300);
+        handleScrollState(scrolledSalsa, setScrolledSalsa, 3300, 3600, 4200);
+        handleScrollState(scrolledShata, setScrolledShata, 3300, 3600, 4200);
+        handleScrollState(scrolledGarlic, setScrolledGarlic, 3300, 3600, 4200);
 
-  // Handle the scroll event
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 300) {
-        setScrolledRice(true);
-      } else {
-        setScrolledRice(false);
-      }
-
-      if (scrollPosition > 600) {
-        setScrolledPasta(true);
-      } else {
-        setScrolledPasta(false);
-      }
-
-      if (scrollPosition > 900) {
-        setScrolledLentils(true);
-      } else {
-        setScrolledLentils(false);
-      }
-
-      if (scrollPosition > 1200) {
-        setScrolledChickpeas(true);
-      } else {
-        setScrolledChickpeas(false);
-      }
-      if (scrollPosition > 1500) {
-        setScrolledOnions(true);
-      } else {
-        setScrolledOnions(false);
-      }
-      if (scrollPosition > 1800) {
-        setscrolledSalsa(true);
-      } else {
-        setscrolledSalsa(false);
-      }
-      if (scrollPosition > 1800) {
-        setscrolledshata(true);
-      } else {
-        setscrolledshata(false);
-      }
-      if (scrollPosition > 1800) {
-        setsetscrolledGarlic(true);
-      } else {
-        setsetscrolledGarlic(false);
-      }
-      if (scrollPosition > 2000) {
-        setIsShowCompleteDish(true);
-      } else {
-        setIsShowCompleteDish(false);
-      }
-    };
-
-    // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        if (scrollPosition > 4200) {
+          setIsShowCompleteDish(true);
+        } else {
+          setIsShowCompleteDish(false);
+        }
+      };
+  
+      // Add the scroll event listener
+      window.addEventListener('scroll', handleScroll);
+  
+      // Clean up the event listener
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [scrolledRice, scrolledPasta, scrolledLentils, scrolledChickpeas, scrolledOnions, scrolledSalsa, scrolledShata, scrolledGarlic]);
   
   return (
     <DefaultLayout>
       <div style={{
-            marginBottom: '500vh'
+            marginBottom: '1000vh'
       }}></div>
       <section className="hero">
         <div className="container">
@@ -122,7 +97,8 @@ const Home = () => {
             {
               !isShowCompleteDish && (
                 <>
-                  <div className="rice">
+                  <div 
+                    className={scrolledRice ? 'rice' : 'rice initial'}>
                     <img
                       src={rice1}
                       alt="rice"
@@ -164,107 +140,133 @@ const Home = () => {
                       className={scrolledRice ? 'rice-8 rice-8-final' : 'rice-8 rice-8-initial'}
                     />
                   </div>
-                  <div className="pasta">
+                  <div
+                  className={(scrolledPasta == 1 || scrolledPasta == 2) ? 'pasta' : 'pasta initial'}>
                     <img
                       src={pasta1}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-1 pasta-1-final' : 'pasta-1 pasta-1-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-1 pasta-1-final' : 'pasta-1 pasta-1-initial'}
                     />
                     <img
                       src={pasta2}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-2 pasta-2-final' : 'pasta-2 pasta-2-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-2 pasta-2-final' : 'pasta-2 pasta-2-initial'}
                     />
                     <img
                       src={pasta3}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-3 pasta-3-final' : 'pasta-3 pasta-3-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-3 pasta-3-final' : 'pasta-3 pasta-3-initial'}
                     />
                     <img
                       src={pasta4}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-4 pasta-4-final' : 'pasta-4 pasta-4-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-4 pasta-4-final' : 'pasta-4 pasta-4-initial'}
+                    />
+                    <img
+                      src={pasta3}
+                      alt="pasta"
+                      className={(scrolledPasta == 2) ? 'pasta-3 pasta-3-final' : 'pasta-3 pasta-3-initial'}
+                    />
+                    <img
+                      src={pasta4}
+                      alt="pasta"
+                      className={(scrolledPasta == 2) ? 'pasta-4 pasta-4-final' : 'pasta-4 pasta-4-initial'}
                     />
                     <img
                       src={pasta5}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-5 pasta-5-final' : 'pasta-5 pasta-5-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-5 pasta-5-final' : 'pasta-5 pasta-5-initial'}
                     />
                     <img
                       src={pasta6}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-6 pasta-6-final' : 'pasta-6 pasta-6-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-6 pasta-6-final' : 'pasta-6 pasta-6-initial'}
+                    />
+                    <img
+                      src={pasta5}
+                      alt="pasta"
+                      className={(scrolledPasta == 2) ? 'pasta-5 pasta-5-final' : 'pasta-5 pasta-5-initial'}
+                    />
+                    <img
+                      src={pasta6}
+                      alt="pasta"
+                      className={(scrolledPasta == 2) ? 'pasta-6 pasta-6-final' : 'pasta-6 pasta-6-initial'}
                     />
                     <img
                       src={pasta7}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-7 pasta-7-final' : 'pasta-7 pasta-7-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-7 pasta-7-final' : 'pasta-7 pasta-7-initial'}
                     />
                     <img
                       src={pasta8}
                       alt="pasta"
-                      className={scrolledPasta ? 'pasta-8 pasta-8-final' : 'pasta-8 pasta-8-initial'}
+                      className={(scrolledPasta == 2) ? 'pasta-8 pasta-8-final' : 'pasta-8 pasta-8-initial'}
                     />
                   </div>
-                  <div className="lentils">
+                  <div
+                  className={(scrolledLentils == 1 || scrolledLentils == 2) ? 'lentils' : 'lentils initial'}>
                     <img
                       src={lentils1}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-1 lentils-1-final' : 'lentils-1 lentils-1-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-1 lentils-1-final' : 'lentils-1 lentils-1-initial'}
                     />
                     <img
                       src={lentils2}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-2 lentils-2-final' : 'lentils-2 lentils-2-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-2 lentils-2-final' : 'lentils-2 lentils-2-initial'}
                     />
                     <img
                       src={lentils3}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-3 lentils-3-final' : 'lentils-3 lentils-3-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-3 lentils-3-final' : 'lentils-3 lentils-3-initial'}
                     />
                     <img
                       src={lentils4}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-4 lentils-4-final' : 'lentils-4 lentils-4-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-4 lentils-4-final' : 'lentils-4 lentils-4-initial'}
                     />
                     <img
                       src={lentils5}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-5 lentils-5-final' : 'lentils-5 lentils-5-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-5 lentils-5-final' : 'lentils-5 lentils-5-initial'}
                     />
                     <img
                       src={lentils6}
                       alt="lentils"
-                      className={scrolledLentils ? 'lentils-6 lentils-6-final' : 'lentils-6 lentils-6-initial'}
+                      className={(scrolledLentils == 2) ? 'lentils-6 lentils-6-final' : 'lentils-6 lentils-6-initial'}
                     />
                   </div>
-                  <div className="chickpeas">
+                  <div
+                  className={(scrolledChickpeas == 1 || scrolledChickpeas == 2) ? 'chickpeas' : 'chickpeas initial'}>
+
                     <img src={chickpeas1} 
                       alt="chickpeas"
-                      className={scrolledChickpeas ? 'chickpeas-1 chickpeas-1-final' : 'chickpeas-1 chickpeas-1-initial'}
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-1 chickpeas-1-final' : 'chickpeas-1 chickpeas-1-initial'}
                     />
                     <img src={chickpeas2} 
                       alt="chickpeas"
-                      className={scrolledChickpeas ? 'chickpeas-2 chickpeas-2-final' : 'chickpeas-2 chickpeas-2-initial'}
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-2 chickpeas-2-final' : 'chickpeas-2 chickpeas-2-initial'}
                     />
                     <img src={chickpeas3} 
                       alt="chickpeas"
-                      className={scrolledChickpeas ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
                     />
                     <img src={chickpeas1} 
                       alt="chickpeas"
-                      className={scrolledChickpeas ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
                     />
                   </div>
-                  <div className="onion">
+                  <div
+                  className={(scrolledOnions == 1 || scrolledOnions == 2) ? 'onion' : 'onion initial'}>
+
                     <img src={onion}
-                      className={scrolledOnions ? 'onion-1 onion-1-final' : 'onion-1 onion-1-initial'}
+                      className={(scrolledOnions == 2) ? 'onion-1 onion-1-final' : 'onion-1 onion-1-initial'}
                     />
                     <img src={onion}
-                      className={scrolledOnions ? 'onion-2 onion-2-final' : 'onion-2 onion-2-initial'}
+                      className={(scrolledOnions == 2) ? 'onion-2 onion-2-final' : 'onion-2 onion-2-initial'}
                     />
                     <img src={onion}
-                      className={scrolledOnions ? 'onion-3 onion-3-final' : 'onion-3 onion-3-initial'}
+                      className={(scrolledOnions == 2) ? 'onion-3 onion-3-final' : 'onion-3 onion-3-initial'}
                     />
                   </div>
                 </>
@@ -280,14 +282,14 @@ const Home = () => {
 <div className="shata">
   <img
     src={shata}
-    className={`${scrolledshata ? (isShowCompleteDish ? 'animate__animated animate__bounceOutRight' : 'animate__animated animate__bounceInRight') : 'hidden'}`}
+    className={`${scrolledShata ? (isShowCompleteDish ? 'animate__animated animate__bounceOutRight' : 'animate__animated animate__bounceInRight') : 'hidden'}`}
   />
 </div>
 
 <div className="garlic">
   <img
     src={garlic}
-    className={`${scrolledgarlic ? (isShowCompleteDish ? 'animate__animated animate__bounceOutLeft' : 'animate__animated animate__bounceInLeft') : 'hidden'}`}
+    className={`${scrolledGarlic ? (isShowCompleteDish ? 'animate__animated animate__bounceOutLeft' : 'animate__animated animate__bounceInLeft') : 'hidden'}`}
   />
 </div>
 </div>
