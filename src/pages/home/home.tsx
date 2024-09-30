@@ -58,44 +58,44 @@ const Home = () => {
         setScrolledRice(false);
       }
 
-      if (scrollPosition > 300) {
+      if (scrollPosition > 600) {
         setScrolledPasta(true);
       } else {
         setScrolledPasta(false);
       }
 
-      if (scrollPosition > 300) {
+      if (scrollPosition > 900) {
         setScrolledLentils(true);
       } else {
         setScrolledLentils(false);
       }
 
-      if (scrollPosition > 500) {
+      if (scrollPosition > 1200) {
         setScrolledChickpeas(true);
       } else {
         setScrolledChickpeas(false);
       }
-      if (scrollPosition > 500) {
+      if (scrollPosition > 1500) {
         setScrolledOnions(true);
       } else {
         setScrolledOnions(false);
       }
-      if (scrollPosition > 800) {
+      if (scrollPosition > 1800) {
         setscrolledSalsa(true);
       } else {
         setscrolledSalsa(false);
       }
-      if (scrollPosition > 800) {
+      if (scrollPosition > 1800) {
         setscrolledshata(true);
       } else {
         setscrolledshata(false);
       }
-      if (scrollPosition > 800) {
+      if (scrollPosition > 1800) {
         setsetscrolledGarlic(true);
       } else {
         setsetscrolledGarlic(false);
       }
-      if (scrollPosition > 1300) {
+      if (scrollPosition > 2000) {
         setIsShowCompleteDish(true);
       } else {
         setIsShowCompleteDish(false);
@@ -114,7 +114,7 @@ const Home = () => {
   return (
     <DefaultLayout>
       <div style={{
-            marginBottom: '300vh'
+            marginBottom: '500vh'
       }}></div>
       <section className="hero">
         <div className="container">
@@ -270,35 +270,39 @@ const Home = () => {
                 </>
               ) 
             }
-            <div className="salsa">
-              {
-                scrolledSalsa && (
-                  <img src={salsa} className={(isShowCompleteDish) ? 'animate__animated animate__bounceOutUp' : 'animate__animated animate__animated animate__bounceInDown'} />
-                )
-              }
-            </div>
-            <div className="shata">
-              {
-                scrolledshata && (
-                  <img src={shata} className={isShowCompleteDish ? 'animate__animated animate__bounceOutRight' : 'animate__animated animate__bounceInRight'} />
-                )
-              }
-            </div>
-            <div className="garlic">
-              {
-                scrolledgarlic && (
-                  <img src={garlic} className={isShowCompleteDish ? 'animate__animated animate__bounceOutLeft' : 'animate__animated animate__bounceInLeft'} />
-                )
-              }
-            </div>
-          </div>
-          {
-            isShowCompleteDish ? (
-              <img src={plateFUll} alt="Plate"  className='animate__animated animate__bounceIn'/>
-            ) : (
-              <img src={plateEmpty} alt="Plate" />
-            )
-          }
+<div className="salsa">
+  <img
+    src={salsa}
+    className={`${scrolledSalsa ? (isShowCompleteDish ? 'animate__animated animate__bounceOutUp' : 'animate__animated animate__bounceInDown') : 'hidden'}`}
+  />
+</div>
+
+<div className="shata">
+  <img
+    src={shata}
+    className={`${scrolledshata ? (isShowCompleteDish ? 'animate__animated animate__bounceOutRight' : 'animate__animated animate__bounceInRight') : 'hidden'}`}
+  />
+</div>
+
+<div className="garlic">
+  <img
+    src={garlic}
+    className={`${scrolledgarlic ? (isShowCompleteDish ? 'animate__animated animate__bounceOutLeft' : 'animate__animated animate__bounceInLeft') : 'hidden'}`}
+  />
+</div>
+</div>
+
+  <img
+    src={plateFUll}
+    alt="Full Plate"
+    className={`${isShowCompleteDish ? 'animate__animated animate__bounceIn' : 'hidden'}`}
+  />
+  <img
+    src={plateEmpty}
+    alt="Empty Plate"
+    className={`${!isShowCompleteDish ? 'animate__animated animate__fadeIn' : 'hidden'}`}
+  />
+
         </div>
       </section>
     </DefaultLayout>

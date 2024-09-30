@@ -131,18 +131,6 @@ header .container .other>a {
     padding-top: 52px;
 }
 
-/* .hero::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 60%;
-    background: rgb(236, 236, 236);
-    background: linear-gradient(90deg, rgba(236, 236, 236, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(249, 249, 249, 1) 85%, rgba(236, 236, 236, 1) 100%);
-    z-index: -1;
-    top: 0;
-    left: 0;
-} */
-
 .hero .container {
     position: relative;
     height: calc(100vh - 68px);
@@ -366,8 +354,10 @@ header .container .other>a {
     /* Adjust duration and timing function as needed */
 }
 
-.ingreadiants img{    transition: all .5s ease-in-out;
+.ingreadiants img {
+    transition: all .5s ease-in-out;
 }
+
 
 .rice-1-final,
 .rice-2-final,
@@ -454,6 +444,525 @@ header .container .other>a {
     animation-delay: 3.5s;
 }
 
+@media (max-width: 1199.98px) {
+    .rice-1-initial {
+        position: absolute;
+        width: 49px;
+        bottom: 0;
+        left: 262px;
+    }
+
+    .rice-2-initial {
+        position: absolute;
+        width: 51px;
+        bottom: 50px;
+        left: 315px;
+    }
+
+    .rice-3-initial {
+        position: absolute;
+        width: 77px;
+        bottom: -70px;
+        left: 280px;
+    }
+
+    .rice-4-initial {
+        position: absolute;
+        width: 253px;
+        bottom: -110px;
+        left: 325px;
+    }
+
+    .rice-5-initial {
+        position: absolute;
+        width: 49px;
+        bottom: 0;
+        right: 225px;
+    }
+
+    .rice-6-initial {
+        position: absolute;
+        width: 51px;
+        bottom: 60px;
+        right: 271px;
+    }
+
+    .rice-7-initial {
+        position: absolute;
+        width: 77px;
+        bottom: 0px;
+        right: 288px;
+    }
+
+    .rice-8-initial {
+        position: absolute;
+        width: 109px;
+        bottom: -50px;
+        left: 225px;
+    }
+
+    .rice-1-final {
+        position: absolute;
+        width: 49px;
+        bottom: -180px;
+        left: 262px;
+    }
+
+    .rice-2-final {
+        position: absolute;
+        width: 51px;
+        bottom: -160px;
+        left: 298px;
+        top: auto;
+    }
+
+    .rice-3-final {
+        position: absolute;
+        width: 77px;
+        top: auto;
+        left: 271px;
+        bottom: -190px;
+    }
+
+    .rice-4-final {
+        position: absolute;
+        width: 316px;
+        bottom: -280px;
+        left: 288px;
+    }
+
+    .rice-5-final {
+        position: absolute;
+        width: 49px;
+        bottom: -220px;
+        right: 315px;
+    }
+
+    .rice-6-final {
+        position: absolute;
+        width: 51px;
+        top: auto;
+        right: 288px;
+        bottom: -150px;
+    }
+
+    .rice-7-final {
+        position: absolute;
+        width: 77px;
+        top: auto;
+        right: 262px;
+        bottom: -160px;
+    }
+
+    .rice-8-final {
+        position: absolute;
+        width: 118px;
+        bottom: -200px;
+        right: 315px;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .rice-1-initial {
+        position: absolute;
+        width: 40.5px;
+        bottom: 0;
+        left: 217.5px;
+    }
+
+    .rice-2-initial {
+        position: absolute;
+        width: 42.2px;
+        bottom: 41.4px;
+        left: 261.5px;
+    }
+
+    .rice-3-initial {
+        position: absolute;
+        width: 64.1px;
+        bottom: -57.8px;
+        left: 232.5px;
+    }
+
+    .rice-4-initial {
+        position: absolute;
+        width: 209.5px;
+        bottom: -91.2px;
+        left: 269.5px;
+    }
+
+    .rice-5-initial {
+        position: absolute;
+        width: 40.5px;
+        bottom: 0;
+        right: 187.5px;
+    }
+
+    .rice-6-initial {
+        position: absolute;
+        width: 42.2px;
+        bottom: 49.6px;
+        right: 225.5px;
+    }
+
+    .rice-7-initial {
+        position: absolute;
+        width: 64.1px;
+        bottom: 0px;
+        right: 239.5px;
+    }
+
+    .rice-8-initial {
+        position: absolute;
+        width: 90.5px;
+        bottom: -41.4px;
+        left: 187.5px;
+    }
+
+    .rice-1-final {
+        position: absolute;
+        width: 40.5px;
+        bottom: -149.2px;
+        left: 217.5px;
+    }
+
+    .rice-2-final {
+        position: absolute;
+        width: 42.2px;
+        bottom: -132.8px;
+        left: 247.5px;
+        top: auto;
+    }
+
+    .rice-3-final {
+        position: absolute;
+        width: 64.1px;
+        top: auto;
+        left: 225.5px;
+        bottom: -157.2px;
+    }
+
+    .rice-4-final {
+        position: absolute;
+        width: 262.5px;
+        bottom: -233.2px;
+        left: 239.5px;
+    }
+
+    .rice-5-final {
+        position: absolute;
+        width: 40.5px;
+        bottom: -182.4px;
+        right: 261.5px;
+    }
+
+    .rice-6-final {
+        position: absolute;
+        width: 42.2px;
+        top: auto;
+        right: 239.5px;
+        bottom: -124.4px;
+    }
+
+    .rice-7-final {
+        position: absolute;
+        width: 64.1px;
+        top: auto;
+        right: 217.5px;
+        bottom: -132.8px;
+    }
+
+    .rice-8-final {
+        position: absolute;
+        width: 97.5px;
+        bottom: -165.2px;
+        right: 261.5px;
+    }
+}
+
+/* For screen sizes up to 992.98px */
+@media (max-width: 992.98px) {
+    .rice-1-initial {
+        position: absolute;
+        width: 40.5px;
+        bottom: 0;
+        left: 217.5px;
+    }
+
+    .rice-2-initial {
+        position: absolute;
+        width: 42.2px;
+        bottom: 41.4px;
+        left: 261.5px;
+    }
+
+    .rice-3-initial {
+        position: absolute;
+        width: 64.1px;
+        bottom: -57.8px;
+        left: 232.5px;
+    }
+
+    .rice-4-initial {
+        position: absolute;
+        width: 209.5px;
+        bottom: -91.2px;
+        left: 269.5px;
+    }
+
+    .rice-5-initial {
+        position: absolute;
+        width: 40.5px;
+        bottom: 0;
+        right: 187.5px;
+    }
+
+    .rice-6-initial {
+        position: absolute;
+        width: 42.2px;
+        bottom: 49.6px;
+        right: 225.5px;
+    }
+
+    .rice-7-initial {
+        position: absolute;
+        width: 64.1px;
+        bottom: 0px;
+        right: 239.5px;
+    }
+
+    .rice-8-initial {
+        position: absolute;
+        width: 90.5px;
+        bottom: -41.4px;
+        left: 187.5px;
+    }
+
+    .rice-1-final {
+        position: absolute;
+        width: 40.5px;
+        bottom: -149.2px;
+        left: 217.5px;
+    }
+
+    .rice-2-final {
+        position: absolute;
+        width: 42.2px;
+        bottom: -132.8px;
+        left: 247.5px;
+        top: auto;
+    }
+
+    .rice-3-final {
+        position: absolute;
+        width: 64.1px;
+        top: auto;
+        left: 225.5px;
+        bottom: -157.2px;
+    }
+
+    .rice-4-final {
+        position: absolute;
+        width: 262.5px;
+        bottom: -233.2px;
+        left: 239.5px;
+    }
+
+    .rice-5-final {
+        position: absolute;
+        width: 40.5px;
+        bottom: -182.4px;
+        right: 261.5px;
+    }
+
+    .rice-6-final {
+        position: absolute;
+        width: 42.2px;
+        top: auto;
+        right: 239.5px;
+        bottom: -124.4px;
+    }
+
+    .rice-7-final {
+        position: absolute;
+        width: 64.1px;
+        top: auto;
+        right: 217.5px;
+        bottom: -132.8px;
+    }
+
+    .rice-8-final {
+        position: absolute;
+        width: 97.5px;
+        bottom: -165.2px;
+        right: 261.5px;
+    }
+}
+
+/* For screen sizes up to 767.98px */
+@media (max-width: 767.98px) {
+    .rice-1-initial {
+        position: absolute;
+        width: 31.3px;
+        /* 40.5px * 0.773 */
+        bottom: 0;
+        left: 168.2px;
+        /* 217.5px * 0.773 */
+    }
+
+    .rice-2-initial {
+        position: absolute;
+        width: 32.6px;
+        /* 42.2px * 0.773 */
+        bottom: 32.1px;
+        /* 41.4px * 0.773 */
+        left: 202.5px;
+        /* 261.5px * 0.773 */
+    }
+
+    .rice-3-initial {
+        position: absolute;
+        width: 49.5px;
+        /* 64.1px * 0.773 */
+        bottom: -44.8px;
+        /* -57.8px * 0.773 */
+        left: 179.8px;
+        /* 232.5px * 0.773 */
+    }
+
+    .rice-4-initial {
+        position: absolute;
+        width: 162.1px;
+        /* 209.5px * 0.773 */
+        bottom: -70.6px;
+        /* -91.2px * 0.773 */
+        left: 208.5px;
+        /* 269.5px * 0.773 */
+    }
+
+    .rice-5-initial {
+        position: absolute;
+        width: 31.3px;
+        /* 40.5px * 0.773 */
+        bottom: 0;
+        right: 144.8px;
+        /* 187.5px * 0.773 */
+    }
+
+    .rice-6-initial {
+        position: absolute;
+        width: 32.6px;
+        /* 42.2px * 0.773 */
+        bottom: 38.4px;
+        /* 49.6px * 0.773 */
+        right: 174.5px;
+        /* 225.5px * 0.773 */
+    }
+
+    .rice-7-initial {
+        position: absolute;
+        width: 49.5px;
+        /* 64.1px * 0.773 */
+        bottom: 0px;
+        right: 184.8px;
+        /* 239.5px * 0.773 */
+    }
+
+    .rice-8-initial {
+        position: absolute;
+        width: 70.1px;
+        /* 90.5px * 0.773 */
+        bottom: -32.1px;
+        /* -41.4px * 0.773 */
+        left: 144.8px;
+        /* 187.5px * 0.773 */
+    }
+
+    .rice-1-final {
+        position: absolute;
+        width: 31.3px;
+        /* 40.5px * 0.773 */
+        bottom: -115.3px;
+        /* -149.2px * 0.773 */
+        left: 168.2px;
+        /* 217.5px * 0.773 */
+    }
+
+    .rice-2-final {
+        position: absolute;
+        width: 32.6px;
+        /* 42.2px * 0.773 */
+        bottom: -102.6px;
+        /* -132.8px * 0.773 */
+        left: 191.3px;
+        /* 247.5px * 0.773 */
+        top: auto;
+    }
+
+    .rice-3-final {
+        position: absolute;
+        width: 49.5px;
+        /* 64.1px * 0.773 */
+        top: auto;
+        left: 174.5px;
+        /* 225.5px * 0.773 */
+        bottom: -121.5px;
+        /* -157.2px * 0.773 */
+    }
+
+    .rice-4-final {
+        position: absolute;
+        width: 203.1px;
+        /* 262.5px * 0.773 */
+        bottom: -180.3px;
+        /* -233.2px * 0.773 */
+        left: 184.8px;
+        /* 239.5px * 0.773 */
+    }
+
+    .rice-5-final {
+        position: absolute;
+        width: 31.3px;
+        /* 40.5px * 0.773 */
+        bottom: -141.1px;
+        /* -182.4px * 0.773 */
+        right: 202.5px;
+        /* 261.5px * 0.773 */
+    }
+
+    .rice-6-final {
+        position: absolute;
+        width: 32.6px;
+        /* 42.2px * 0.773 */
+        top: auto;
+        right: 184.8px;
+        /* 239.5px * 0.773 */
+        bottom: -96.1px;
+        /* -124.4px * 0.773 */
+    }
+
+    .rice-7-final {
+        position: absolute;
+        width: 49.5px;
+        /* 64.1px * 0.773 */
+        top: auto;
+        right: 168.2px;
+        /* 217.5px * 0.773 */
+        bottom: -102.6px;
+        /* -132.8px * 0.773 */
+    }
+
+    .rice-8-final {
+        position: absolute;
+        width: 75.3px;
+        /* 97.5px * 0.773 */
+        bottom: -127.5px;
+        /* -165.2px * 0.773 */
+        right: 202.5px;
+        /* 261.5px * 0. 773 */
+    }
+}
+
 /* -------------------------------------------------------*/
 
 .pasta-1-initial {
@@ -476,12 +985,14 @@ header .container .other>a {
     left: 320px;
     width: 220px;
 }
+
 .pasta-4-initial {
     position: absolute;
     bottom: -90px;
     left: 280px;
     width: 200px;
 }
+
 .pasta-5-initial {
     position: absolute;
     bottom: 20px;
@@ -532,12 +1043,14 @@ header .container .other>a {
     left: 360px;
     width: 210px;
 }
+
 .pasta-4-final {
     position: absolute;
     bottom: -210px;
     left: 430px;
     width: 200px;
 }
+
 .pasta-5-final {
     position: absolute;
     bottom: -200px;
@@ -633,6 +1146,395 @@ header .container .other>a {
     animation-delay: 3.5s;
 }
 
+@media (max-width: 1199.98px) {
+    .pasta-1-initial {
+        position: absolute;
+        bottom: 0;
+        right: 136px;
+        width: 271px;
+    }
+
+    .pasta-2-initial {
+        position: absolute;
+        bottom: 0;
+        left: 136px;
+        width: 198px;
+    }
+
+    .pasta-3-initial {
+        position: absolute;
+        bottom: 5px;
+        left: 288px;
+        width: 198px;
+    }
+
+    .pasta-4-initial {
+        position: absolute;
+        bottom: -90px;
+        left: 252px;
+        width: 181px;
+    }
+
+    .pasta-5-initial {
+        position: absolute;
+        bottom: 20px;
+        left: 136px;
+        width: 298px;
+    }
+
+    .pasta-6-initial {
+        position: absolute;
+        bottom: -50px;
+        left: 136px;
+        width: 298px;
+    }
+
+    .pasta-7-initial {
+        position: absolute;
+        bottom: 20px;
+        left: 271px;
+        width: 298px;
+    }
+
+    .pasta-8-initial {
+        position: absolute;
+        bottom: 20px;
+        right: 181px;
+        width: 298px;
+    }
+
+    .pasta-1-final {
+        position: absolute;
+        bottom: -200px;
+        right: 262px;
+        width: 163px;
+    }
+
+    .pasta-2-final {
+        position: absolute;
+        bottom: -220px;
+        left: 281px;
+        width: 181px;
+    }
+
+    .pasta-3-final {
+        position: absolute;
+        bottom: -235px;
+        left: 324px;
+        width: 190px;
+    }
+
+    .pasta-4-final {
+        position: absolute;
+        bottom: -210px;
+        left: 388px;
+        width: 181px;
+    }
+
+    .pasta-5-final {
+        position: absolute;
+        bottom: -200px;
+        left: 388px;
+        width: 198px;
+    }
+
+    .pasta-6-final {
+        position: absolute;
+        bottom: -190px;
+        left: 271px;
+        width: 198px;
+    }
+
+    .pasta-7-final {
+        position: absolute;
+        bottom: -160px;
+        left: 406px;
+        width: 198px;
+    }
+
+    .pasta-8-final {
+        position: absolute;
+        bottom: -230px;
+        right: 235px;
+        width: 252px;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .pasta-1-initial {
+        position: absolute;
+        bottom: 0;
+        right: 112.5px;
+        width: 224.5px;
+    }
+
+    .pasta-2-initial {
+        position: absolute;
+        bottom: 0;
+        left: 112.5px;
+        width: 164.2px;
+    }
+
+    .pasta-3-initial {
+        position: absolute;
+        bottom: 4.1px;
+        left: 238.5px;
+        width: 164.2px;
+    }
+
+    .pasta-4-initial {
+        position: absolute;
+        bottom: -74.4px;
+        left: 208.5px;
+        width: 150.5px;
+    }
+
+    .pasta-5-initial {
+        position: absolute;
+        bottom: 16.6px;
+        left: 112.5px;
+        width: 247.5px;
+    }
+
+    .pasta-6-initial {
+        position: absolute;
+        bottom: -41.4px;
+        left: 112.5px;
+        width: 247.5px;
+    }
+
+    .pasta-7-initial {
+        position: absolute;
+        bottom: 16.6px;
+        left: 224.5px;
+        width: 247.5px;
+    }
+
+    .pasta-8-initial {
+        position: absolute;
+        bottom: 16.6px;
+        right: 150.5px;
+        width: 247.5px;
+    }
+
+    .pasta-1-final {
+        position: absolute;
+        bottom: -165.2px;
+        right: 217.5px;
+        width: 134.5px;
+    }
+
+    .pasta-2-final {
+        position: absolute;
+        bottom: -182.4px;
+        left: 233.5px;
+        width: 150.5px;
+    }
+
+    .pasta-3-final {
+        position: absolute;
+        bottom: -194.2px;
+        left: 268.5px;
+        width: 157.5px;
+    }
+
+    .pasta-4-final {
+        position: absolute;
+        bottom: -173.2px;
+        left: 321.5px;
+        width: 150.5px;
+    }
+
+    .pasta-5-final {
+        position: absolute;
+        bottom: -165.2px;
+        left: 321.5px;
+        width: 164.2px;
+    }
+
+    .pasta-6-final {
+        position: absolute;
+        bottom: -156.4px;
+        left: 224.5px;
+        width: 164.2px;
+    }
+
+    .pasta-7-final {
+        position: absolute;
+        bottom: -132.8px;
+        left: 335.5px;
+        width: 164.2px;
+    }
+
+    .pasta-8-final {
+        position: absolute;
+        bottom: -190.2px;
+        right: 194.5px;
+        width: 208.5px;
+    }
+}
+
+/* For screen sizes up to 767.98px */
+@media (max-width: 767.98px) {
+    .pasta-1-initial {
+        position: absolute;
+        bottom: 0;
+        right: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 173.3px;
+        /* 224.5px * 0.773 */
+    }
+
+    .pasta-2-initial {
+        position: absolute;
+        bottom: 0;
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-3-initial {
+        position: absolute;
+        bottom: 3.2px;
+        /* 4.1px * 0.773 */
+        left: 184.3px;
+        /* 238.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2 px * 0.773 */
+    }
+
+    .pasta-4-initial {
+        position: absolute;
+        bottom: -57.4px;
+        /* -74.4px * 0.773 */
+        left: 161.3px;
+        /* 208.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-5-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-6-initial {
+        position: absolute;
+        bottom: -32.1px;
+        /* -41.4px * 0.773 */
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-7-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        left: 173.3px;
+        /* 224.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-8-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        right: 116.1px;
+        /* 150.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-1-final {
+        position: absolute;
+        bottom: -128.1px;
+        /* -165.2px * 0.773 */
+        right: 168.2px;
+        /* 217.5px * 0.773 */
+        width: 104.1px;
+        /* 134.5px * 0.773 */
+    }
+
+    .pasta-2-final {
+        position: absolute;
+        bottom: -141.1px;
+        /* -182.4px * 0.773 */
+        left: 180.5px;
+        /* 233.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-3-final {
+        position: absolute;
+        bottom: -150.3px;
+        /* -194.2px * 0.773 */
+        left: 207.8px;
+        /* 268.5px * 0.773 */
+        width: 121.8px;
+        /* 157.5px * 0.773 */
+    }
+
+    .pasta-4-final {
+        position: absolute;
+        bottom: -134.2px;
+        /* -173.2px * 0.773 */
+        left: 248.5px;
+        /* 321.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-5-final {
+        position: absolute;
+        bottom: -128.1px;
+        /* -165.2px * 0.773 */
+        left: 248.5px;
+        /* 321.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-6-final {
+        position: absolute;
+        bottom: -121.5px;
+        /* -156.4px * 0.773 */
+        left: 173.3px;
+        /* 224.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-7-final {
+        position: absolute;
+        bottom: -103.1px;
+        /* -132.8px * 0.773 */
+        left: 259.3px;
+        /* 335.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-8-final {
+        position: absolute;
+        bottom: -147.3px;
+        /* -190.2px * 0.773 */
+        right: 150.5px;
+        /* 194.5px * 0.773 */
+        width: 161.3px;
+        /*  208.5px * 0.773 */
+    }
+}
+
 /* -----------------------------------------*/
 .lentils-1-initial {
     position: absolute;
@@ -640,6 +1542,7 @@ header .container .other>a {
     right: 150px;
     width: 50px;
 }
+
 .lentils-2-initial {
     position: absolute;
     bottom: 0px;
@@ -684,6 +1587,7 @@ header .container .other>a {
     right: 350px;
     width: 45px;
 }
+
 .lentils-2-final {
     position: absolute;
     bottom: -160px;
@@ -787,6 +1691,352 @@ header .container .other>a {
     animation-name: fly;
     animation-delay: 3.5s;
 }
+
+@media (max-width: 1199.98px) {
+    .lentils-1-initial {
+        position: absolute;
+        bottom: 120px;
+        right: 136px;
+        width: 45px;
+    }
+
+    .lentils-2-initial {
+        position: absolute;
+        bottom: 0px;
+        left: 225px;
+        width: 41px;
+    }
+
+    .lentils-3-initial {
+        position: absolute;
+        bottom: 120px;
+        left: 136px;
+        width: 41px;
+        z-index: 5;
+    }
+
+    .lentils-4-initial {
+        position: absolute;
+        bottom: 110px;
+        right: 225px;
+        width: 36px;
+    }
+
+    .lentils-5-initial {
+        position: absolute;
+        bottom: 100px;
+        left: 361px;
+        width: 41px;
+        z-index: 5;
+    }
+
+    .lentils-6-initial {
+        position: absolute;
+        bottom: -50px;
+        left: 315px;
+        width: 253px;
+        z-index: 5;
+    }
+
+    .lentils-1-final {
+        position: absolute;
+        bottom: -120px;
+        right: 315px;
+        width: 41px;
+    }
+
+    .lentils-2-final {
+        position: absolute;
+        bottom: -160px;
+        left: 315px;
+        width: 41px;
+    }
+
+    .lentils-3-final {
+        position: absolute;
+        bottom: -171px;
+        left: 423px;
+        width: 41px;
+        z-index: 5;
+    }
+
+    .lentils-4-final {
+        position: absolute;
+        bottom: -210px;
+        right: 331px;
+        width: 31px;
+    }
+
+    .lentils-5-final {
+        position: absolute;
+        bottom: -230px;
+        left: 361px;
+        width: 41px;
+        z-index: 5;
+    }
+
+    .lentils-6-final {
+        position: absolute;
+        bottom: -230px;
+        left: 331px;
+        width: 253px;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .lentils-1-initial {
+        position: absolute;
+        bottom: 99.4px;
+        right: 112.5px;
+        width: 37.3px;
+    }
+
+    .lentils-2-initial {
+        position: absolute;
+        bottom: 0px;
+        left: 186.5px;
+        width: 34.1px;
+    }
+
+    .lentils-3-initial {
+        position: absolute;
+        bottom: 99.4px;
+        left: 112.5px;
+        width: 34.1px;
+        z-index: 5;
+    }
+
+    .lentils-4-initial {
+        position: absolute;
+        bottom: 91.2px;
+        right: 186.5px;
+        width: 29.9px;
+    }
+
+    .lentils-5-initial {
+        position: absolute;
+        bottom: 82.8px;
+        left: 299.5px;
+        width: 34.1px;
+        z-index: 5;
+    }
+
+    .lentils-6-initial {
+        position: absolute;
+        bottom: -41.4px;
+        left: 261.5px;
+        width: 209.5px;
+        z-index: 5;
+    }
+
+    .lentils-1-final {
+        position: absolute;
+        bottom: -99.4px;
+        right: 261.5px;
+        width: 34.1px;
+    }
+
+    .lentils-2-final {
+        position: absolute;
+        bottom: -132.8px;
+        left: 261.5px;
+        width: 34.1px;
+    }
+
+    .lentils-3-final {
+        position: absolute;
+        bottom: -141.2px;
+        left: 350.5px;
+        width: 34.1px;
+        z-index: 5;
+    }
+
+    .lentils-4-final {
+        position: absolute;
+        bottom: -173.2px;
+        right: 274.5px;
+        width: 25.9px;
+    }
+
+    .lentils-5-final {
+        position: absolute;
+        bottom: -190.2px;
+        left: 299.5px;
+        width: 34.1px;
+        z-index: 5;
+    }
+
+    .lentils-6-final {
+        position: absolute;
+        bottom: -190.2px;
+        left: 274.5px;
+        width: 209.5px;
+        z-index: 5;
+    }
+}
+
+/* For screen sizes up to 767.98px */
+@media (max-width: 767.98px) {
+    .pasta-1-initial {
+        position: absolute;
+        bottom: 0;
+        right: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 173.3px;
+        /* 224.5px * 0.773 */
+    }
+
+    .pasta-2-initial {
+        position: absolute;
+        bottom: 0;
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-3-initial {
+        position: absolute;
+        bottom: 3.2px;
+        /* 4.1px * 0.773 */
+        left: 184.3px;
+        /* 238.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2 px * 0.773 */
+    }
+
+    .pasta-4-initial {
+        position: absolute;
+        bottom: -57.4px;
+        /* -74.4px * 0.773 */
+        left: 161.3px;
+        /* 208.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-5-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-6-initial {
+        position: absolute;
+        bottom: -32.1px;
+        /* -41.4px * 0.773 */
+        left: 87.2px;
+        /* 112.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-7-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        left: 173.3px;
+        /* 224.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-8-initial {
+        position: absolute;
+        bottom: 12.9px;
+        /* 16.6px * 0.773 */
+        right: 116.1px;
+        /* 150.5px * 0.773 */
+        width: 191.3px;
+        /* 247.5px * 0.773 */
+    }
+
+    .pasta-1-final {
+        position: absolute;
+        bottom: -128.1px;
+        /* -165.2px * 0.773 */
+        right: 168.2px;
+        /* 217.5px * 0.773 */
+        width: 104.1px;
+        /* 134.5px * 0.773 */
+    }
+
+    .pasta-2-final {
+        position: absolute;
+        bottom: -141.1px;
+        /* -182.4px * 0.773 */
+        left: 180.5px;
+        /* 233.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-3-final {
+        position: absolute;
+        bottom: -150.3px;
+        /* -194.2px * 0.773 */
+        left: 207.8px;
+        /* 268.5px * 0.773 */
+        width: 121.8px;
+        /* 157.5px * 0.773 */
+    }
+
+    .pasta-4-final {
+        position: absolute;
+        bottom: -134.2px;
+        /* -173.2px * 0.773 */
+        left: 248.5px;
+        /* 321.5px * 0.773 */
+        width: 116.1px;
+        /* 150.5px * 0.773 */
+    }
+
+    .pasta-5-final {
+        position: absolute;
+        bottom: -128.1px;
+        /* -165.2px * 0.773 */
+        left: 248.5px;
+        /* 321.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-6-final {
+        position: absolute;
+        bottom: -121.5px;
+        /* -156.4px * 0.773 */
+        left: 173.3px;
+        /* 224.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-7-final {
+        position: absolute;
+        bottom: -103.1px;
+        /* -132.8px * 0.773 */
+        left: 259.3px;
+        /* 335.5px * 0.773 */
+        width: 126.5px;
+        /* 164.2px * 0.773 */
+    }
+
+    .pasta-8-final {
+        position: absolute;
+        bottom: -147.3px;
+        /* -190.2px * 0.773 */
+        right: 150.5px;
+        /* 194.5px * 0.773 */
+        width: 161.3px;
+        /*  208.5px * 0.773 */
+    }
+}
+
 /* ------------------------------------------------------------------*/
 
 .chickpeas-1-initial {
@@ -795,18 +2045,21 @@ header .container .other>a {
     right: 180px;
     width: 200px;
 }
+
 .chickpeas-2-initial {
     position: absolute;
     bottom: -60px;
     left: 180px;
     width: 200px;
 }
+
 .chickpeas-3-initial {
     position: absolute;
     bottom: -60px;
     left: 380px;
     width: 150px;
 }
+
 .chickpeas-4-initial {
     position: absolute;
     bottom: -30px;
@@ -814,24 +2067,28 @@ header .container .other>a {
     width: 200px;
     transform: rotate(40deg);
 }
+
 .chickpeas-1-final {
     position: absolute;
     bottom: -260px;
     right: 340px;
     width: 180px;
 }
+
 .chickpeas-2-final {
     position: absolute;
     bottom: -220px;
     left: 300px;
     width: 200px;
 }
+
 .chickpeas-3-final {
     position: absolute;
     bottom: -220px;
     left: 500px;
     width: 120px;
 }
+
 .chickpeas-4-final {
     position: absolute;
     bottom: -260px;
@@ -904,6 +2161,127 @@ header .container .other>a {
     animation-name: fly;
     animation-delay: 3.5s;
 }
+
+@media (max-width: 1199.98px) {
+    .chickpeas-1-initial {
+        position: absolute;
+        bottom: -60px;
+        right: 163px;
+        width: 181px;
+    }
+
+    .chickpeas-2-initial {
+        position: absolute;
+        bottom: -60px;
+        left: 163px;
+        width: 181px;
+    }
+
+    .chickpeas-3-initial {
+        position: absolute;
+        bottom: -60px;
+        left: 346px;
+        width: 136px;
+    }
+
+    .chickpeas-4-initial {
+        position: absolute;
+        bottom: -30px;
+        right: 397px;
+        width: 181px;
+        transform: rotate(40deg);
+    }
+
+    .chickpeas-1-final {
+        position: absolute;
+        bottom: -260px;
+        right: 307px;
+        width: 163px;
+    }
+
+    .chickpeas-2-final {
+        position: absolute;
+        bottom: -220px;
+        left: 271px;
+        width: 181px;
+    }
+
+    .chickpeas-3-final {
+        position: absolute;
+        bottom: -220px;
+        left: 450px;
+        width: 109px;
+    }
+
+    .chickpeas-4-final {
+        position: absolute;
+        bottom: -260px;
+        right: 397px;
+        width: 181px;
+        transform: rotate(40deg);
+    }
+}
+
+@media (max-width: 992.98px) {
+    .chickpeas-1-initial {
+        position: absolute;
+        bottom: -49.7px;
+        right: 135.3px;
+        width: 149.9px;
+    }
+
+    .chickpeas-2-initial {
+        position: absolute;
+        bottom: -49.7px;
+        left: 135.3px;
+        width: 149.9px;
+    }
+
+    .chickpeas-3-initial {
+        position: absolute;
+        bottom: -49.7px;
+        left: 286.5px;
+        width: 112.9px;
+    }
+
+    .chickpeas-4-initial {
+        position: absolute;
+        bottom: -24.9px;
+        right: 329.5px;
+        width: 149.9px;
+        transform: rotate(40deg);
+    }
+
+    .chickpeas-1-final {
+        position: absolute;
+        bottom: -215.2px;
+        right: 253.5px;
+        width: 134.9px;
+    }
+
+    .chickpeas-2-final {
+        position: absolute;
+        bottom: -182.4px;
+        left: 224.5px;
+        width: 149.9px;
+    }
+
+    .chickpeas-3-final {
+        position: absolute;
+        bottom: -182.4px;
+        left: 373.5px;
+        width: 90.9px;
+    }
+
+    .chickpeas-4-final {
+        position: absolute;
+        bottom: -215.2px;
+        right: 329.5px;
+        width: 149.9px;
+        transform: rotate(40deg);
+    }
+}
+
 /* ---------------------------------------------------------------*/
 
 .onion-1-initial {
@@ -1003,12 +2381,143 @@ header .container .other>a {
 }
 
 .onion-6 {
- 
+
     animation-name: fly;
     animation-delay: 2.5s;
     z-index: 2;
 }
 
+@media (max-width: 1199.98px) {
+    .onion-1-initial {
+        position: absolute;
+        left: 109px;
+        width: 217px;
+        bottom: 0;
+    }
+
+    .onion-2-initial {
+        position: absolute;
+        right: 289px;
+        width: 217px;
+        bottom: -40px;
+    }
+
+    .onion-3-initial {
+        position: absolute;
+        right: 109px;
+        width: 217px;
+        bottom: 0;
+    }
+
+    .onion-1-final {
+        position: absolute;
+        left: 289px;
+        width: 199px;
+        bottom: -210px;
+    }
+
+    .onion-2-final {
+        position: absolute;
+        right: 335px;
+        width: 217px;
+        bottom: -200px;
+    }
+
+    .onion-3-final {
+        position: absolute;
+        right: 272px;
+        width: 217px;
+        bottom: -230px;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .onion-1-initial {
+        position: absolute;
+        left: 90.3px;
+        width: 179.7px;
+        bottom: 0;
+    }
+
+    .onion-2-initial {
+        position: absolute;
+        right: 239.5px;
+        width: 179.7px;
+        bottom: -33.1px;
+    }
+
+    .onion-3-initial {
+        position: absolute;
+        right: 90.3px;
+        width: 179.7px;
+        bottom: 0;
+    }
+
+    .onion-1-final {
+        position: absolute;
+        left: 239.5px;
+        width: 165.1px;
+        bottom: -173.2px;
+    }
+
+    .onion-2-final {
+        position: absolute;
+        right: 278.5px;
+        width: 179.7px;
+        bottom: -165.2px;
+    }
+
+    .onion-3-final {
+        position: absolute;
+        right: 225.5px;
+        width: 179.7px;
+        bottom: -190.2px;
+    }
+}
+/* For screen sizes up to 767.98px */
+@media (max-width: 767.98px) {
+    .onion-1-initial {
+        position: absolute;
+        left: 69.8px; /* 90.3px * 0.773 */
+        width: 138.8px; /* 179.7px * 0.773 */
+        bottom: 0;
+    }
+
+    .onion-2-initial {
+        position: absolute;
+        right: 185.3px; /* 239.5px * 0.773 */
+        width: 138.8px; /* 179.7px * 0.773 */
+        bottom: -25.6px; /* -33.1px * 0.773 */
+    }
+
+    .onion-3-initial {
+        position: absolute;
+        right: 69.8px; /* 90.3px * 0.773 */
+        width: 138.8px; /* 179.7px * 0.773 */
+        bottom: 0;
+    }
+
+    .onion-1-final {
+        position: absolute;
+        left: 185.3px; /* 239.5px * 0.773 */
+        width: 127.5px; /* 165.1px * 0.773 */
+        bottom: -134.2px; /* -173.2px * 0.773 */
+    }
+
+    .onion-2-final {
+        position: absolute;
+        right: 215.5px; /* 278.5px * 0.773 */
+        width: 138.8px; /* 179.7px * 0.773 */
+        bottom: -128.1px; /* -165.2px * 0.773 */
+    }
+
+    .onion-3-final {
+        position: absolute;
+        right: 174.5px; /* 225.5px * 0.773 */
+        width: 138.8px; /* 179.7px * 0.773 */
+        bottom: -147.3px; /* -190.2px * 0.773 */
+    }
+}
 .onion-7 {
     animation-name: fly;
     animation-delay: 3s;
@@ -1024,8 +2533,10 @@ header .container .other>a {
     position: absolute;
     bottom: -110px;
     left: 240px;
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
 }
+
 .shata img {
     width: 450px;
     position: absolute;
@@ -1041,3 +2552,410 @@ header .container .other>a {
     bottom: -90px;
     animation-duration: 1s;
 }
+
+
+@media (max-width: 1399.98px) {
+    .hero .ingreadiants {
+        width: 1000px;
+    }
+
+    .hero .container>img {
+        width: 590px;
+    }
+
+    .salsa img {
+        width: 470px;
+    }
+
+    .shata img {
+        width: 390px;
+    }
+
+    .garlic img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .hero .ingreadiants {
+        width: 890px;
+    }
+
+    .hero .container>img {
+        width: 540px;
+    }
+
+    .salsa img {
+        width: 350px;
+        bottom: -100px;
+        left: 270px;
+    }
+
+    .shata img {
+        width: 390px;
+        right: 150px;
+        bottom: -170px;
+    }
+
+    .garlic img {
+        width: 360px;
+        left: 120px;
+        bottom: -90px;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .hero .ingreadiants {
+        width: 740px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero .container>img {
+        width: 460px;
+    }
+
+    .garlic img {
+        width: 310px;
+        left: 100px;
+        bottom: -80px;
+    }
+
+    .shata img {
+        width: 350px;
+        right: 120px;
+        bottom: -130px;
+    }
+
+    .salsa img {
+        width: 310px;
+        bottom: -60px;
+        left: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero .container > img {
+        width: 340px;
+      }
+      
+}
+
+/* For screen sizes up to 767.98px */
+@media (max-width: 767.98px) {
+    .lentils-1-initial {
+        position: absolute;
+        bottom: 76.8px; /* 99.4px * 0.773 */
+        right: 87.2px; /* 112.5px * 0.773 */
+        width: 28.8px; /* 37.3px * 0.773 */
+    }
+
+    .lentils-2-initial {
+        position: absolute;
+        bottom: 0px;
+        left: 144.3px; /* 186.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+    }
+
+    .lentils-3-initial {
+        position: absolute;
+        bottom: 76.8px; /* 99.4px * 0.773 */
+        left: 87.2px; /* 112.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+        z-index: 5;
+    }
+
+    .lentils-4-initial {
+        position: absolute;
+        bottom: 70.5px; /* 91.2px * 0.773 */
+        right: 144.3px; /* 186.5px * 0.773 */
+        width: 23.1px; /* 29.9px * 0.773 */
+    }
+
+    .lentils-5-initial {
+        position: absolute;
+        bottom: 64.1px; /* 82.8px * 0.773 */
+        left: 231.5px; /* 299.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+        z-index: 5;
+    }
+
+    .lentils-6-initial {
+        position: absolute;
+        bottom: -32.1px; /* -41.4px * 0.773 */
+        left: 203.5px; /* 261.5px * 0.773 */
+        width: 162.3px; /* 209.5px * 0.773 */
+        z-index: 5;
+    }
+
+    .lentils-1-final {
+        position: absolute;
+        bottom: -76.8px; /* -99.4px * 0.773 */
+        right: 203.5px; /* 261.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+    }
+
+    .lentils-2-final {
+        position: absolute;
+        bottom: -103.2px; /* -132.8px * 0.773 */
+        left: 203.5px; /* 261.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+    }
+
+    .lentils-3-final {
+        position: absolute;
+        bottom: -109.5px; /* -141.2px * 0.773 */
+        left: 271.5px; /* 350.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+        z-index: 5;
+    }
+
+    .lentils-4-final {
+        position: absolute;
+        bottom: -134.2px; /* -173.2px * 0.773 */
+        right: 213.5px; /* 274.5px * 0.773 */
+        width: 20.1px; /* 25.9px * 0.773 */
+    }
+
+    .lentils-5-final {
+        position: absolute;
+        bottom: -147.3px; /* -190.2px * 0.773 */
+        left: 231.5px; /* 299.5px * 0.773 */
+        width: 26.3px; /* 34.1px * 0.773 */
+        z-index: 5;
+    }
+
+    .lentils-6-final {
+        position: absolute;
+        bottom: -147.3px; /* -190.2px * 0.773 */
+        left: 213.5px; /* 274.5px * 0.773 */
+        width: 162.3px; /* 209.5px * 0.773 */
+        z-index: 5;
+    }
+}
+
+/* For screen sizes up to 767.98px */
+
+@media (max-width: 767.98px) {
+
+    .chickpeas-1-initial {
+
+        position: absolute;
+
+        bottom: -38.5px;
+        /* -49.7px * 0.773 */
+
+        right: 104.5px;
+        /* 135.3px * 0.773 */
+
+        width: 115.8px;
+        /* 149.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-2-initial {
+
+        position: absolute;
+
+        bottom: -38.5px;
+        /* -49.7px * 0.773 */
+
+        left: 104.5px;
+        /* 135.3px * 0.773 */
+
+        width: 115.8px;
+        /* 149.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-3-initial {
+
+        position: absolute;
+
+        bottom: -38.5px;
+        /* -49.7px * 0.773 */
+
+        left: 221.3px;
+        /* 286.5px * 0.773 */
+
+        width: 87.3px;
+        /* 112.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-4-initial {
+
+        position: absolute;
+
+        bottom: -19.2px;
+        /* -24.9px * 0.773 */
+
+        right: 255.3px;
+        /* 329.5px * 0.773 */
+
+        width: 115.8px;
+        /* 149.9px * 0.773 */
+
+        transform: rotate(40deg);
+
+    }
+
+
+
+    .chickpeas-1-final {
+
+        position: absolute;
+
+        bottom: -166.5px;
+        /* -215.2px * 0.773 */
+
+        right: 196.5px;
+        /* 253.5px * 0.773 */
+
+        width: 104.3px;
+        /* 134.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-2-final {
+
+        position: absolute;
+
+        bottom: -141.1px;
+        /* -182.4px * 0.773 */
+
+        left: 173.3px;
+        /* 224.5px * 0.773 */
+
+        width: 115.8px;
+        /* 149.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-3-final {
+
+        position: absolute;
+
+        bottom: -141.1px;
+        /* -182.4px * 0.773 */
+
+        left: 288.3px;
+        /* 373.5px * 0.773 */
+
+        width: 70.2px;
+        /* 90.9px * 0.773 */
+
+    }
+
+
+
+    .chickpeas-4-final {
+
+        position: absolute;
+
+        bottom: -166.5px;
+        /* -215.2px * 0.773 */
+
+        right: 255.3px;
+        /* 329.5px * 0.773 */
+
+        width: 115.8px;
+        /* 149.9px * 0.773 */
+
+        transform: rotate(40deg);
+
+    }
+
+    .hero .ingreadiants {
+        width: 590px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .salsa img {
+        width: 210px;
+        bottom: -60px;
+        left: 190px;
+      }
+      .shata img {
+        width: 240px;
+        right: 120px;
+        bottom: -130px;
+      }
+      .garlic img {
+        width: 220px;
+        left: 120px;
+        bottom: -80px;
+      }
+
+}
+
+
+
+.hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .ingreadiants img {
+    opacity: 0 ;
+  }
+  .ingreadiants .rice img {
+    opacity: 1;
+  }
+
+  .rice-1-final,
+  .rice-2-final,
+  .rice-3-final,
+  .rice-4-final,
+  .rice-5-final,
+  .rice-6-final,
+  .rice-7-final,
+  .rice-8-final,
+  .pasta-1-final,
+.pasta-2-final,
+.pasta-3-final,
+.pasta-4-final,
+.pasta-5-final,
+.pasta-6-final,
+.pasta-7-final,
+.pasta-8-final,
+.lentils-1-final,
+.lentils-2-final,
+.lentils-3-final,
+.lentils-4-final,
+.lentils-5-final,
+.lentils-6-final,
+.lentils-7-final,
+.lentils-8-final,
+.chickpeas-1-final,
+.chickpeas-2-final,
+.chickpeas-3-final,
+.chickpeas-4-final,
+.chickpeas-5-final,
+.chickpeas-6-final,
+.chickpeas-7-final,
+.chickpeas-8-final,
+.onion-1-final,
+.onion-2-final,
+.onion-3-final,
+.onion-4-final,
+.onion-5-final,
+.onion-6-final,
+.onion-7-final,
+.onion-8-final {
+    opacity: 1 !important;
+}
+
