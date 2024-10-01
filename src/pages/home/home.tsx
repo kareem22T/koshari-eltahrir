@@ -8,6 +8,8 @@ import rice1 from "../../images/rice-1.png";
 import rice2 from "../../images/rice-2.png";
 import rice3 from "../../images/rice-3.png";
 import rice4 from "../../images/rice-4.png";
+import rice5 from "../../images/rice-5.png";
+import rice6 from "../../images/rice-6.png";
 import rice8 from "../../images/rice-8 (2).png";
 
 import pasta1 from "./../../images/pasta-1.png";
@@ -29,8 +31,12 @@ import lentils6 from "./../../images/lentils-6.png";
 import chickpeas1 from "./../../images/chickpeas-1.png";
 import chickpeas2 from "./../../images/chickpeas-2.png";
 import chickpeas3 from "./../../images/chickpeas-3.png";
+import chickpeas4 from "./../../images/CHEK.png";
+import chickpeas5 from "./../../images/CHEK2.png";
 
-import onion from "./../../images/onion.png";
+import onion from "./../../images/onion-1.png";
+import onion2 from "./../../images/onion-2.png";
+import onion3 from "./../../images/onion-3.png";
 
 import salsa from "./../../images/salsa.png";
 import shata from "./../../images/shata.png";
@@ -135,6 +141,16 @@ const Home = () => {
                       className={scrolledRice ? 'rice-7 rice-7-final' : 'rice-7 rice-7-initial'}
                     />
                     <img
+                      src={rice6}
+                      alt="rice"
+                      className={scrolledRice ? 'rice-9 rice-9-final' : 'rice-9 rice-9-initial'}
+                    />
+                    <img
+                      src={rice5}
+                      alt="rice"
+                      className={scrolledRice ? 'rice-10 rice-10-final' : 'rice-10 rice-10-initial'}
+                    />
+                    <img
                       src={rice8}
                       alt="rice"
                       className={scrolledRice ? 'rice-8 rice-8-final' : 'rice-8 rice-8-initial'}
@@ -231,6 +247,16 @@ const Home = () => {
                       className={(scrolledLentils == 2) ? 'lentils-5 lentils-5-final' : 'lentils-5 lentils-5-initial'}
                     />
                     <img
+                      src={lentils5}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-8 lentils-8-final' : 'lentils-8 lentils-8-initial'}
+                    />
+                    <img
+                      src={lentils6}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-7 lentils-7-final' : 'lentils-7 lentils-7-initial'}
+                    />
+                    <img
                       src={lentils6}
                       alt="lentils"
                       className={(scrolledLentils == 2) ? 'lentils-6 lentils-6-final' : 'lentils-6 lentils-6-initial'}
@@ -251,6 +277,14 @@ const Home = () => {
                       alt="chickpeas"
                       className={(scrolledChickpeas == 2) ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
                     />
+                    <img src={chickpeas4} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-4 chickpeas-4-final' : 'chickpeas-4 chickpeas-4-initial'}
+                    />
+                    <img src={chickpeas5} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-5 chickpeas-5-final' : 'chickpeas-5 chickpeas-5-initial'}
+                    />
                     <img src={chickpeas1} 
                       alt="chickpeas"
                       className={(scrolledChickpeas == 2) ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
@@ -262,11 +296,17 @@ const Home = () => {
                     <img src={onion}
                       className={(scrolledOnions == 2) ? 'onion-1 onion-1-final' : 'onion-1 onion-1-initial'}
                     />
-                    <img src={onion}
+                    <img src={onion3}
                       className={(scrolledOnions == 2) ? 'onion-2 onion-2-final' : 'onion-2 onion-2-initial'}
                     />
-                    <img src={onion}
+                    <img src={onion2}
                       className={(scrolledOnions == 2) ? 'onion-3 onion-3-final' : 'onion-3 onion-3-initial'}
+                    />
+                    <img src={onion3}
+                      className={(scrolledOnions == 2) ? 'onion-4 onion-4-final' : 'onion-4 onion-4-initial'}
+                    />
+                    <img src={onion2}
+                      className={(scrolledOnions == 2) ? 'onion-5 onion-5-final' : 'onion-5 onion-5-initial'}
                     />
                   </div>
                 </>

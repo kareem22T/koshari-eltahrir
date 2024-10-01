@@ -146,7 +146,7 @@ header .container .other>a {
 }
 
 .hero .ingreadiants {
-    width: 80%;
+    width: 1040px;
     margin: auto;
     height: 40%;
     position: relative;
@@ -291,6 +291,21 @@ header .container .other>a {
     left: 250px;
 }
 
+.rice-9-initial {
+    position: absolute;
+    width: 145px;
+    bottom: -110px;
+    right: 320px;
+}
+
+.rice-10-initial {
+    width: 150px;
+    position: absolute;
+    bottom: -60px;
+    left: 310px;
+}
+
+
 .rice-1-final {
     position: absolute;
     width: 54px;
@@ -350,6 +365,19 @@ header .container .other>a {
     bottom: -200px;
     right: 350px;
 }
+.rice-9-final {
+    position: absolute;
+    width: 145px;
+    bottom: -210px;
+    right: 270px;
+}
+
+.rice-10-final {
+    width: 150px;
+    position: absolute;
+    bottom: -240px;
+    left: 310px;
+}
 
 .rice {
     transition: width 1.5s ease-in-out, top 1.5s ease-in-out, left 1.5s ease-in-out;
@@ -368,6 +396,8 @@ header .container .other>a {
 .rice-5-final,
 .rice-6-final,
 .rice-7-final,
+.rice-9-final,
+.rice-10-final,
 .rice-8-final {
     transition: all .5s ease-in-out;
     animation: none !important;
@@ -442,6 +472,16 @@ header .container .other>a {
 }
 
 .rice-8 {
+    animation-name: fly;
+    animation-delay: 3.5s;
+}
+
+.rice-9 {
+    animation-name: fly;
+    animation-delay: 3s;
+}
+
+.rice-10 {
     animation-name: fly;
     animation-delay: 3.5s;
 }
@@ -969,44 +1009,44 @@ header .container .other>a {
 
 .pasta-1-initial {
     position: absolute;
-    bottom: 0;
-    right: 150px;
-    width: 300px;
+    bottom: -60px;
+    right: 100px;
+    width: 350px;
 }
 
 .pasta-2-initial {
     position: absolute;
-    bottom: 0;
-    left: 150px;
-    width: 220px;
+    bottom: -60px;
+    left: 130px;
+    width: 300px;
 }
 
 .pasta-3-initial {
     position: absolute;
-    bottom: 5px;
-    left: 320px;
-    width: 220px;
+    bottom: -35px;
+    left: 370px;
+    width: 290px;
 }
 
 .pasta-4-initial {
     position: absolute;
-    bottom: -90px;
+    bottom: -110px;
     left: 280px;
-    width: 200px;
+    width: 280px;
 }
 
 .pasta-5-initial {
     position: absolute;
     bottom: 20px;
-    left: 150px;
-    width: 330px;
+    left: 110px;
+    width: 400px;
 }
 
 .pasta-6-initial {
     position: absolute;
-    bottom: -50px;
-    left: 150px;
-    width: 330px;
+    bottom: -110px;
+    left: 120px;
+    width: 390px;
 }
 
 
@@ -1020,9 +1060,9 @@ header .container .other>a {
 
 .pasta-8-initial {
     position: absolute;
-    bottom: 20px;
-    right: 200px;
-    width: 330px;
+    bottom: -50px;
+    right: 130px;
+    width: 420px;
 }
 
 .pasta-1-final {
@@ -1062,27 +1102,26 @@ header .container .other>a {
 
 .pasta-6-final {
     position: absolute;
-    bottom: -190px;
-    left: 300px;
-    width: 220px;
+    bottom: -210px;
+    left: 280px;
+    width: 290px;
 }
 
 
 .pasta-7-final {
     position: absolute;
-    bottom: -160px;
-    left: 450px;
-    width: 220px;
+    bottom: -210px;
+    left: 390px;
+    width: 300px;
 }
 
 
 .pasta-8-final {
     position: absolute;
-    bottom: -230px;
+    bottom: -250px;
     right: 260px;
-    width: 280px;
+    width: 340px;
 }
-
 .pasta-1-final,
 .pasta-2-final,
 .pasta-3-final,
@@ -1570,9 +1609,9 @@ header .container .other>a {
 
 .lentils-5-initial {
     position: absolute;
-    bottom: 100px;
-    left: 400px;
-    width: 45px;
+    bottom: -40px;
+    left: 500px;
+    width: 245px;
     z-index: 5;
 }
 
@@ -1580,7 +1619,23 @@ header .container .other>a {
     position: absolute;
     bottom: -50px;
     left: 350px;
-    width: 280px;
+    width: 260px;
+    z-index: 5;
+}
+
+.lentils-7-initial {
+    position: absolute;
+    width: 290px;
+    left: 240px;
+    bottom: 0;
+    z-index: 5;
+}
+
+.lentils-8-initial {
+    position: absolute;
+    width: 260px;
+    right: 90px;
+    bottom: -70px;
     z-index: 5;
 }
 
@@ -1588,7 +1643,7 @@ header .container .other>a {
     position: absolute;
     bottom: -120px;
     right: 350px;
-    width: 45px;
+    width: 15px;
 }
 
 .lentils-2-final {
@@ -1602,7 +1657,7 @@ header .container .other>a {
     position: absolute;
     bottom: -171px;
     left: 470px;
-    width: 45px;
+    width: 35px;
     z-index: 5;
 }
 
@@ -1615,18 +1670,33 @@ header .container .other>a {
 
 .lentils-5-final {
     position: absolute;
-    bottom: -230px;
-    left: 400px;
-    width: 45px;
+    bottom: -190px;
+    left: 330px;
+    width: 155px;
     z-index: 5;
 }
 
 .lentils-6-final {
     position: absolute;
     bottom: -230px;
-    left: 370px;
-    width: 280px;
+    left: 430px;
+    width: 210px;
     z-index: 5;
+}
+
+.lentils-7-final {
+    position: absolute;
+    width: 180px;
+    left: 380px;
+    bottom: -200px;
+    z-index: 5;
+}
+
+.lentils-8-final {
+    position: absolute;
+    width: 150px;
+    right: 300px;
+    bottom: -210px;
 }
 
 
@@ -1687,7 +1757,7 @@ header .container .other>a {
 
 .lentils-7 {
     animation-name: fly;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 
 .lentils-8 {
@@ -2045,37 +2115,51 @@ header .container .other>a {
 .chickpeas-1-initial {
     position: absolute;
     bottom: -60px;
-    right: 180px;
-    width: 200px;
+    right: 240px;
+    width: 220px;
 }
 
 .chickpeas-2-initial {
     position: absolute;
-    bottom: -60px;
-    left: 180px;
-    width: 200px;
+    bottom: -40px;
+    left: 160px;
+    width: 290px;
 }
 
 .chickpeas-3-initial {
     position: absolute;
-    bottom: -60px;
-    left: 380px;
+    bottom: -20px;
+    left: 410px;
     width: 150px;
 }
 
 .chickpeas-4-initial {
     position: absolute;
-    bottom: -30px;
-    right: 440px;
-    width: 200px;
-    transform: rotate(40deg);
+    width: 170px;
+    left: 220px;
+    bottom: 40px;
+}
+
+.chickpeas-4-initial {
+    position: absolute;
+    width: 170px;
+    left: 220px;
+    bottom: 40px;
+}
+
+.chickpeas-5-initial {
+    position: absolute;
+    position: absolute;
+    right: 150px;
+    width: 150px;
+    bottom: -80px;
 }
 
 .chickpeas-1-final {
     position: absolute;
-    bottom: -260px;
-    right: 340px;
-    width: 180px;
+    bottom: -240px;
+    right: 380px;
+    width: 140px;
 }
 
 .chickpeas-2-final {
@@ -2094,10 +2178,17 @@ header .container .other>a {
 
 .chickpeas-4-final {
     position: absolute;
-    bottom: -260px;
-    right: 440px;
-    width: 200px;
-    transform: rotate(40deg);
+    width: 150px;
+    left: 340px;
+    bottom: -190px;
+}
+
+.chickpeas-5-final {
+    position: absolute;
+    position: absolute;
+    right: 310px;
+    width: 120px;
+    bottom: -230px;
 }
 
 .chickpeas-1-final,
@@ -2289,16 +2380,16 @@ header .container .other>a {
 
 .onion-1-initial {
     position: absolute;
-    left: 120px;
-    width: 240px;
-    bottom: 0;
+    left: 320px;
+    width: 190px;
+    bottom: 70px;
 }
 
 .onion-2-initial {
     position: absolute;
-    right: 320px;
+    right: 310px;
     width: 240px;
-    bottom: -40px;
+    bottom: -20px;
 }
 
 
@@ -2306,7 +2397,21 @@ header .container .other>a {
     position: absolute;
     right: 120px;
     width: 240px;
-    bottom: 0;
+    bottom: 20px;
+}
+
+.onion-4-initial {
+    position: absolute;
+    right: 340px;
+    width: 250px;
+    bottom: -90px;
+}
+
+.onion-5-initial {
+    position: absolute;
+    left: 230px;
+    bottom: -20px;
+    width: 240px;
 }
 
 
@@ -2330,6 +2435,20 @@ header .container .other>a {
     right: 300px;
     width: 240px;
     bottom: -230px;
+}
+
+.onion-4-final {
+    position: absolute;
+    right: 360px;
+    width: 250px;
+    bottom: -230px;
+}
+
+.onion-5-final {
+    position: absolute;
+    left: 430px;
+    bottom: -210px;
+    width: 220px;
 }
 
 
@@ -2997,6 +3116,10 @@ header .container .other>a {
     opacity: 0;
 }
 
+
+.chickpeas {
+    transform-origin: center 100%;
+}
 .chickpeas.initial {
     transform: scale(1.3);
     transform-origin: center 100%;
