@@ -1618,7 +1618,7 @@ header .container .other>a {
 .lentils-6-initial {
     position: absolute;
     width: 260px;
-    right: 120px;
+    right: 150px;
     bottom: -30px;
     z-index: 5;
 }
@@ -1633,9 +1633,9 @@ header .container .other>a {
 
 .lentils-8-initial {
     position: absolute;
+    bottom: -50px;
+    left: 300px;
     width: 260px;
-    right: 150px;
-    bottom: -30px;
     z-index: 5;
 }
 
