@@ -238,70 +238,70 @@ header .container .other>a {
 .rice-1-initial {
     position: absolute;
     width: 54px;
-    bottom: 0;
+    bottom: 30px;
     left: 290px;
 }
 
 .rice-2-initial {
     position: absolute;
     width: 56px;
-    bottom: 50px;
+    bottom: 80px;
     left: 350px;
 }
 
 .rice-3-initial {
     position: absolute;
     width: 85px;
-    bottom: -70px;
+    bottom: -40px;
     left: 310px;
 }
 
 .rice-4-initial {
     position: absolute;
     width: 280px;
-    bottom: -110px;
+    bottom: -70px;
     left: 360px;
 }
 
 .rice-5-initial {
     position: absolute;
     width: 54px;
-    bottom: 0;
+    bottom: 30px;
     right: 250px;
 }
 
 .rice-6-initial {
     position: absolute;
     width: 56px;
-    bottom: 60px;
+    bottom: 90px;
     right: 300px;
 }
 
 .rice-7-initial {
     position: absolute;
     width: 85px;
-    bottom: 0px;
+    bottom: 30px;
     right: 320px;
 }
 
 .rice-8-initial {
     position: absolute;
     width: 120px;
-    bottom: -50px;
+    bottom: -20px;
     left: 250px;
 }
 
 .rice-9-initial {
     position: absolute;
     width: 145px;
-    bottom: -110px;
+    bottom: -70px;
     right: 320px;
 }
 
 .rice-10-initial {
     width: 150px;
     position: absolute;
-    bottom: -60px;
+    bottom: -20px;
     left: 310px;
 }
 
