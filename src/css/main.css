@@ -139,7 +139,7 @@ header .container .other>a {
 }
 
 .hero .container>img {
-    width: 650px;
+    width: 600px;
     margin: auto;
     display: block;
     padding-bottom: 24px;
@@ -1073,10 +1073,10 @@ header .container .other>a {
 }
 
 .pasta-2-final {
+    bottom: -230px;
+    left: 320px;
     position: absolute;
-    bottom: -220px;
-    left: 310px;
-    width: 200px;
+    width: 190px;
 }
 
 .pasta-3-final {
@@ -1087,10 +1087,10 @@ header .container .other>a {
 }
 
 .pasta-4-final {
-    position: absolute;
-    bottom: -210px;
+    bottom: -230px;
     left: 430px;
-    width: 200px;
+    position: absolute;
+    width: 192px;
 }
 
 .pasta-5-final {
@@ -1102,25 +1102,25 @@ header .container .other>a {
 
 .pasta-6-final {
     position: absolute;
-    bottom: -210px;
-    left: 280px;
-    width: 290px;
+    bottom: -220px;
+    left: 300px;
+    width: 270px;
 }
 
 
 .pasta-7-final {
     position: absolute;
-    bottom: -210px;
-    left: 390px;
+    bottom: -226px;
+    left: 395px;
     width: 300px;
 }
 
 
 .pasta-8-final {
+    bottom: -240px;
     position: absolute;
-    bottom: -250px;
-    right: 260px;
-    width: 340px;
+    right: 279px;
+    width: 320px;
 }
 .pasta-1-final,
 .pasta-2-final,
