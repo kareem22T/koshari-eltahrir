@@ -104,7 +104,7 @@ const Home = () => {
               !isShowCompleteDish && (
                 <>
                   <div 
-                    className={scrolledRice ? 'rice' : 'rice initial'}>
+                  className={scrolledRice ? 'rice' : 'rice initial'}>
                     <img
                       src={rice1}
                       alt="rice"
@@ -123,6 +123,7 @@ const Home = () => {
                     <img
                       src={rice4}
                       alt="rice"
+                      style={{display: (scrolledLentils == 2 ? "none" : "block")}}
                       className={scrolledRice ? 'rice-4 rice-4-final' : 'rice-4 rice-4-initial'}
                     />
                     <img
@@ -216,6 +217,7 @@ const Home = () => {
                     <img
                       src={pasta8}
                       alt="pasta"
+                      style={{display: (scrolledLentils == 2 ? "none" : "block")}}
                       className={(scrolledPasta == 2) ? 'pasta-8 pasta-8-final' : 'pasta-8 pasta-8-initial'}
                     />
                   </div>
@@ -261,6 +263,31 @@ const Home = () => {
                       alt="lentils"
                       className={(scrolledLentils == 2) ? 'lentils-6 lentils-6-final' : 'lentils-6 lentils-6-initial'}
                     />
+                    <img
+                      src={lentils6}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-1-static-final lentils-static-final' : 'lentils-static-initial'}
+                    />
+                    <img
+                      src={lentils5}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-2-static-final lentils-static-final' : 'lentils-static-initial'}
+                    />
+                    <img
+                      src={lentils5}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-3-static-final lentils-static-final' : 'lentils-static-initial'}
+                    />
+                    <img
+                      src={lentils5}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-4-static-final lentils-static-final' : 'lentils-static-initial'}
+                    />
+                    <img
+                      src={lentils5}
+                      alt="lentils"
+                      className={(scrolledLentils == 2) ? 'lentils-5-static-final ' : 'lentils-static-initial'}
+                    />
                   </div>
                   <div
                   className={(scrolledChickpeas == 1 || scrolledChickpeas == 2) ? 'chickpeas' : 'chickpeas initial'}>
@@ -288,6 +315,22 @@ const Home = () => {
                     <img src={chickpeas1} 
                       alt="chickpeas"
                       className={(scrolledChickpeas == 2) ? 'chickpeas-3 chickpeas-3-final' : 'chickpeas-3 chickpeas-3-initial'}
+                    />
+                    <img src={chickpeas1} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-1-static-final' : 'chickpeas-static-initial'}
+                    />
+                    <img src={chickpeas1} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-2-static-final' : 'chickpeas-static-initial'}
+                    />
+                    <img src={chickpeas1} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-3-static-final' : 'chickpeas-static-initial'}
+                    />
+                    <img src={chickpeas3} 
+                      alt="chickpeas"
+                      className={(scrolledChickpeas == 2) ? 'chickpeas-4-static-final' : 'chickpeas-static-initial'}
                     />
                   </div>
                   <div

@@ -179,7 +179,7 @@ header .container .other>a {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 6;
+    z-index: 7;
 }
 
 
@@ -190,7 +190,7 @@ header .container .other>a {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 6;
 }
 
 .hero .ingreadiants .onion {
@@ -200,7 +200,7 @@ header .container .other>a {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 8;
 }
 
 .hero .ingreadiants .salsa {
@@ -3130,3 +3130,73 @@ header .container .other>a {
     transform-origin: center 100%;
     opacity: 0;
 }
+
+.lentils-1-static-final {
+    position: absolute;
+    bottom: -210px;
+    width: 220px;
+    left: 310px;
+}
+.lentils-2-static-final {
+    position: absolute;
+    bottom: -210px;
+    width: 220px;
+    left: 450px;
+}
+.lentils-3-static-final {
+    position: absolute;
+    bottom: -230px;
+    width: 220px;
+    left: 330px;
+    transform: rotate(20deg) !important;
+}
+.lentils-4-static-final {
+    position: absolute;
+    bottom: -230px;
+    width: 220px;
+    left: 440px;
+    transform: rotate(20deg) !important;
+}.lentils-5-static-final {
+    position: absolute;
+    bottom: -230px;
+    width: 220px;
+    left: 410px;
+    transform: rotate(190deg) !important;
+    transition: opacity .3s ease-in !important;
+}
+
+.lentils-static-initial {
+    display: none !important;
+    transition: opacity .3s ease-in !important;
+    transition-delay: .4s !important;
+}
+.chickpeas-static-initial {
+    display: none !important;
+    transition: opacity .3s ease-in !important;
+    transition-delay: .4s !important;
+}
+
+.chickpeas-1-static-final {
+    width: 180px;
+    transform: rotate(100deg);
+    bottom: -260px;
+    left: 370px;
+}
+.chickpeas-2-static-final {
+    width: 180px;
+    transform: rotate(100deg);
+    bottom: -260px;
+    left: 410px;
+}
+.chickpeas-3-static-final {
+    width: 180px;
+    transform: rotate(100deg);
+    bottom: -250px;
+    left: 460px;
+}.chickpeas-4-static-final {
+    width: 120px;
+    transform: rotate(100deg);
+    bottom: -210px;
+    left: 600px;
+}
+
